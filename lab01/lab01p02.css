@@ -1,0 +1,48 @@
+html 
+{
+    font-size: 16px;
+}
+
+body
+{
+    background-color: antiquewhite;
+}
+
+article
+{
+    max-width: 60ch;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:60px auto;
+    text-align: justify;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid rgb(234, 226, 226);
+    border-radius: 10px;
+    line-height: 1.4;
+}
+
+article h1 
+{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 1.8em;
+}
+article h2
+{
+    font-size: 1.2em;
+}
+
+article p
+{
+    font-size: 1em;
+    text-indent: 2em;
+    margin-bottom: 20px;
+    
+}
+
+a
+{
+text-decoration: none;
+color: cornflowerblue;
+}

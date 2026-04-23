@@ -1,0 +1,29 @@
+      table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-family: sans-serif;
+            box-shadow: 0 0 20px rgba(97, 102, 104, 0.05);
+            margin: 20px auto;
+        }
+        caption {
+             font-size: 1.3em;
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+        th, td {
+             padding: 12px 15px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        table thead th {
+            background-color: #005A9C;
+            color: #ffffff;
+        } 
+        table tfoot td {
+             background-color: #e6f0fa;
+            color: #005A9C;
+        }
+        .podkreslone {
+            background-color: #e6f0fa;
+        }

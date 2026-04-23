@@ -1,0 +1,17 @@
+.kontener {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: cornsilk;
+    border-radius: 8px;
+}
+
+dt {
+    margin-top: 30px;
+    list-style-type: square;
+    font-size: 1.2em;
+    display: list-item;
+}
+dd {
+    
+}

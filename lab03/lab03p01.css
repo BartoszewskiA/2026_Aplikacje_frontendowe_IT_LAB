@@ -1,0 +1,41 @@
+body {
+    background-color: antiquewhite;
+    font-size: 12pt;
+}
+header, main, footer, article, section, aside {
+    background-color: aliceblue;
+    min-height: 30px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+p {
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+article main {
+    background-color: aquamarine;
+}
+article footer, article header {
+    background-color: rgb(113, 221, 185);
+}
+
+article main p {
+    font-size: 1.1em;
+}
+article header p {
+    font-size: 0.9em;
+    font-style: italic;
+}
+article header p::before {
+    content: "„";
+}
+article header p::after {
+    content: "”";
+}
+
+article main p:first-of-type {
+    font-weight: bold;
+}
