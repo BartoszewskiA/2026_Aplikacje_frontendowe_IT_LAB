@@ -1,0 +1,115 @@
+
+header, footer, aside, nav, main {
+    box-sizing: border-box;
+    margin-left: calc(5px + 3vw);
+    margin-right: calc(5px + 3vw);
+    margin-top: calc(5px + 1vh);
+    margin-bottom: calc(5px + 1vh);
+    padding: calc(5px + 1vw);
+    border-radius: 5px;
+}
+header, footer, aside, nav {
+    background-color: antiquewhite;
+    border: 1px solid darkgoldenrod;
+}
+
+figure {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid rgb(114, 82, 40);
+    border-radius: 5px;
+    background-color: black;
+    color: bisque;
+}
+main {
+
+}
+div .galeria {
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: larger;
+    color: rgb(114, 82, 40);
+    
+    border: 1px solid rgb(114, 82, 40);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px 10px;
+}
+
+#grid_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0px;
+    grid-template-areas: 
+    "hed"
+    "nav"
+    "aside"
+    "main"
+    "foot";
+}
+
+header {
+    grid-area: hed;
+}
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+aside {
+    grid-area: aside;
+}
+footer{
+    grid-area: foot;
+}
+
+
+
+@media (width > 800px )
+{
+#grid_container {
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    "hed hed"
+    "nav main"
+    "aside main"
+    "foot foot";
+}
+}
+
+@media (width >1024px) {
+#grid_container {
+    grid-template-columns: 1fr 2fr 5fr 2fr 1fr;
+    grid-template-areas: 
+    "hed hed hed hed hed"
+    ". nav main aside ."
+    ". nav main aside ."
+    "foot foot foot foot foot";
+}
+nav a{
+    display: block;
+}
+}
+
+@media (prefers-color-scheme: dark) {
+    header, footer, aside, nav {
+        background-color: rgb(38, 37, 37);
+        border: 1px solid rgb(38, 37, 37);
+        color: bisque;
+    }
+    nav a {
+        color: bisque;
+        border: 1px solid bisque;
+    }
+    body {
+        background-color: black;
+    }   
+}
